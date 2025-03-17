@@ -1,15 +1,10 @@
-const mysql = require('mysql');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./f1.db');
 
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'f1'
-});
-
-db.connect((err) => {
-  if (err) throw err;
-  console.log('Connected to database');
+db.serialize(() => {
+  db.run("CREATE TABLE IF NOT EXISTS drivers (name TEXT, team TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS races (race TEXT, location TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS championships (year INTEGER, winner TEXT)");
 });
 
 module.exports = db;

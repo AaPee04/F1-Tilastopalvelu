@@ -4,6 +4,8 @@ import './App.css';
 import Home from './Home';
 import DriverList from './DriverList';
 import DriverProfile from './DriverProfile';
+import RaceList from './RaceList';
+import ChampionshipList from './ChampionshipList';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <nav>
             <Link to="/">Etusivu</Link>
             <Link to="/drivers">Kuljettajat</Link>
+            <Link to="/races">Kisat</Link>
+            <Link to="/championships">Mestaruudet</Link>
           </nav>
           <h1>F1 Tietoa</h1>
           <p>Tervetuloa F1-tietosivulle!</p>
@@ -21,6 +25,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/drivers" element={<DriverList />} />
           <Route path="/driver/:name" element={<DriverProfile />} />
+          <Route path="/races" element={<RaceList />} />
+          <Route path="/championships" element={<ChampionshipList />} />
         </Routes>
       </div>
     </Router>

@@ -18,8 +18,14 @@ const DriverProfile = () => {
   return (
     <div>
       <h2>{driver.name}</h2>
-      <p>Team: {driver.team}</p>
-      <p>Nationality: {driver.nationality}</p>
+      <p>Ikä: {driver.age}</p>
+      <p>Paalupaikat: {driver.polePositions}</p>
+      <p>Tiimi: {driver.team}</p>
+      <p>Kansallisuus: {driver.nationality}</p>
+      <p>Voitot: {driver.wins}</p>
+      <p>Palkintopaikat: {driver.podiums}</p>
+      <p>Kisojen määrä: {driver.races}</p>
+      <p>Kokonaispisteet uran aikana: {driver.totalPoints}</p>
       <p>Bio: {driver.bio}</p>
     </div>
   );

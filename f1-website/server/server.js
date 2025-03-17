@@ -4,18 +4,46 @@ const app = express();
 
 app.get('/drivers', (req, res) => {
   const query = 'SELECT * FROM drivers';
-  db.query(query, (err, result) => {
-    if (err) throw err;
-    res.json(result);
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
   });
 });
 
 app.get('/driver/:name', (req, res) => {
   const name = req.params.name;
   const query = 'SELECT * FROM drivers WHERE name = ?';
-  db.query(query, [name], (err, result) => {
-    if (err) throw err;
-    res.json(result[0]);
+  db.get(query, [name], (err, row) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(row);
+  });
+});
+
+app.get('/races', (req, res) => {
+  const query = 'SELECT * FROM races';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
+});
+
+app.get('/championships', (req, res) => {
+  const query = 'SELECT * FROM championships';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
   });
 });
 

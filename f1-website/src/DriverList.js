@@ -16,7 +16,7 @@ const DriverList = () => {
       <ul>
         {drivers.map((driver, index) => (
           <li key={index}>
-            <Link to={`/driver/${driver.name}`}>{driver.name}</Link> - {driver.team} ({driver.nationality})
+            <Link to={`/driver/${driver.name.toLowerCase().replace(' ', '-')}`}>{driver.name}</Link> - {driver.team} ({driver.nationality})
           </li>
         ))}
       </ul>
