@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  background-color: #ffffff; /* Valkoinen tausta */
+  color: #000000; /* Musta teksti */
+}
+
+.App-header {
+  background-color: #ff0000; /* Punainen tausta */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #000000; /* Musta nappi */
+  color: #ffffff; /* Valkoinen teksti */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff0000; /* Punainen hover-efekti */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
