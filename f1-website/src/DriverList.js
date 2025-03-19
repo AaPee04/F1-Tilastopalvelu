@@ -14,13 +14,24 @@ const DriverList = () => {
   return (
     <div>
       <h2>Nykyiset F1-kuljettajat</h2>
-      <ul>
-        {drivers.map((driver, index) => (
-          <li key={index}>
-            <Link to={`/driver/${driver.name.toLowerCase().replace(' ', '-')}`}>{driver.name}</Link> - {driver.team} ({driver.nationality})
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Nimi</th>
+            <th>Tiimi</th>
+            <th>Kansallisuus</th>
+          </tr>
+        </thead>
+        <tbody>
+          {drivers.map((driver, index) => (
+            <tr key={index}>
+              <td><Link to={`/driver/${driver.name.toLowerCase().replace(' ', '-')}`}>{driver.name}</Link></td>
+              <td>{driver.team}</td>
+              <td>{driver.nationality}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

@@ -52,3 +52,28 @@ li {
   padding: 10px;
   border-radius: 5px;
 }
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #ff0000; /* Punainen tausta */
+  color: #ffffff; /* Valkoinen teksti */
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
