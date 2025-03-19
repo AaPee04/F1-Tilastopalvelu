@@ -6,9 +6,10 @@ const DriverProfile = () => {
   const [driver, setDriver] = useState(null);
 
   useEffect(() => {
-    fetch(`/driver/${name}`)
+    fetch(`http://localhost:3001/driver/${name}`)
       .then(response => response.json())
-      .then(data => setDriver(data));
+      .then(data => setDriver(data))
+      .catch(error => console.error('Error fetching data:', error));
   }, [name]);
 
   if (!driver) {

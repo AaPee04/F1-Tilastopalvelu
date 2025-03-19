@@ -5,9 +5,10 @@ const DriverList = () => {
   const [drivers, setDrivers] = useState([]);
 
   useEffect(() => {
-    fetch('/drivers')
+    fetch('http://localhost:3001/drivers')
       .then(response => response.json())
-      .then(data => setDrivers(data));
+      .then(data => setDrivers(data))
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
 
   return (
