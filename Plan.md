@@ -1,4 +1,4 @@
-#This is F1-Website
+# Suunnitelma
 
 1.
 The website is meant for the people that are interested in F1 and want to know more about the F1 seasons and the current F1 Drivers, Races and Championship. I hope a lot of F1 fans are going to use this website to find info on their favorite F1 drivers.

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
-import DriverList from './DriverList';
+import DriverList from './DriverChart';
 import DriverProfile from './DriverProfile';
 import RaceList from './RaceList';
 import ChampionshipList from './ChampionshipList';
