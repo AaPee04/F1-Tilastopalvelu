@@ -3,48 +3,36 @@
     "name": "Lewis Hamilton",
     "age": 40,
     "polePositions": 104,
-    "team": "Mercedes",
+    "team": "Ferrari",
     "nationality": "British",
     "wins": 105,
     "podiums": 202,
-    "races": 356,
-    "points": 4862.5,
+    "races": 358,
+    "points": 4871.5,
     "bio": "Seitsemänkertainen maailmanmestari"
-  },
-  {
-    "name": "Charles Leclerc",
-    "age": 27,
-    "polePositions": 26,
-    "team": "Ferrari",
-    "nationality": "Monaco",
-    "wins": 8,
-    "podiums": 43,
-    "races": 147,
-    "points": 1430,
-    "bio": "Nuori ja lahjakas kuljettaja Monacosta"
   },
   {
     "name": "Max Verstappen",
     "age": 27,
-    "polePositions": 30,
+    "polePositions": 40,
     "team": "Red Bull Racing",
     "nationality": "Netherlands",
-    "wins": 50,
-    "podiums": 100,
-    "races": 200,
-    "points": 3000,
-    "bio": "Dominantti kuljettaja, joka on voittanut useita mestaruuksia"
+    "wins": 63,
+    "podiums": 113,
+    "races": 211,
+    "points": 3059.5,
+    "bio": "Dominantti kuljettaja, joka on voittanut 4 mestaruutta"
   },
   {
     "name": "Lando Norris",
     "age": 25,
-    "polePositions": 5,
+    "polePositions": 10,
     "team": "McLaren",
     "nationality": "United Kingdom",
-    "wins": 2,
-    "podiums": 20,
-    "races": 100,
-    "points": 800,
+    "wins": 5,
+    "podiums": 28,
+    "races": 130,
+    "points": 1051,
     "bio": "Nuori ja lupaava kuljettaja"
   },
   {
@@ -54,57 +42,57 @@
     "team": "Aston Martin",
     "nationality": "Spanish",
     "wins": 32,
-    "podiums": 97,
-    "races": 350,
-    "points": 2000,
+    "podiums": 106,
+    "races": 406,
+    "points": 2337,
     "bio": "Kaksinkertainen maailmanmestari"
   },
   {
     "name": "George Russell",
     "age": 27,
-    "polePositions": 3,
+    "polePositions": 5,
     "team": "Mercedes",
     "nationality": "British",
-    "wins": 1,
-    "podiums": 10,
-    "races": 100,
-    "points": 500,
+    "wins": 3,
+    "podiums": 17,
+    "races": 130,
+    "points": 749,
     "bio": "Nuori ja lahjakas kuljettaja"
   },
   {
     "name": "Carlos Sainz",
     "age": 30,
-    "polePositions": 2,
+    "polePositions": 6,
     "team": "Williams",
     "nationality": "Spanish",
-    "wins": 1,
-    "podiums": 15,
-    "races": 150,
-    "points": 700,
+    "wins": 4,
+    "podiums": 27,
+    "races": 211,
+    "points": 1273.5,
     "bio": "Vahva ja vakaa kuljettaja"
   },
   {
     "name": "Pierre Gasly",
     "age": 29,
-    "polePositions": 1,
+    "polePositions": 0,
     "team": "Alpine",
     "nationality": "French",
     "wins": 1,
     "podiums": 5,
-    "races": 100,
-    "points": 400,
+    "races": 156,
+    "points": 436,
     "bio": "Lahjakas kuljettaja, joka on osoittanut potentiaalinsa"
   },
   {
     "name": "Oscar Piastri",
     "age": 23,
-    "polePositions": 0,
+    "polePositions": 1,
     "team": "McLaren",
     "nationality": "Australian",
-    "wins": 0,
-    "podiums": 0,
-    "races": 20,
-    "points": 50,
+    "wins": 3,
+    "podiums": 11,
+    "races": 48,
+    "points": 423,
     "bio": "Nuori ja lupaava tulokas"
   },
   {
@@ -114,9 +102,9 @@
     "team": "Racing Bulls",
     "nationality": "Japanese",
     "wins": 0,
-    "podiums": 1,
-    "races": 50,
-    "points": 100,
+    "podiums": 0,
+    "races": 92,
+    "points": 94,
     "bio": "Nuori ja nopea kuljettaja"
   },
   {
@@ -127,8 +115,8 @@
     "nationality": "Australian",
     "wins": 0,
     "podiums": 0,
-    "races": 10,
-    "points": 20,
+    "races": 3,
+    "points": 0,
     "bio": "Nuori ja lupaava kuljettaja"
   },
   {
@@ -139,20 +127,20 @@
     "nationality": "Canadian",
     "wins": 0,
     "podiums": 3,
-    "races": 120,
-    "points": 300,
-    "bio": "Vahva ja vakaa kuljettaja"
+    "races": 171,
+    "points": 302,
+    "bio": "Vakaa kuljettaja"
   },
   {
     "name": "Esteban Ocon",
     "age": 28,
-    "polePositions": 1,
+    "polePositions": 0,
     "team": "Haas",
     "nationality": "French",
     "wins": 1,
-    "podiums": 5,
-    "races": 120,
-    "points": 400,
+    "podiums": 4,
+    "races": 158,
+    "points": 455,
     "bio": "Vahva ja vakaa kuljettaja"
   },
   {
@@ -164,7 +152,7 @@
     "wins": 0,
     "podiums": 0,
     "races": 5,
-    "points": 10,
+    "points": 11,
     "bio": "Nuori ja lupaava tulokas"
   },
   {
@@ -174,8 +162,8 @@
     "team": "Kick Sauber",
     "nationality": "German",
     "wins": 0,
-    "podiums": 2,
-    "races": 180,
+    "podiums": 0,
+    "races": 232,
     "points": 577,
     "bio": "Kokenut ja vakaa kuljettaja"
   },
@@ -187,8 +175,8 @@
     "nationality": "Brazilian",
     "wins": 0,
     "podiums": 0,
-    "races": 5,
-    "points": 10,
+    "races": 2,
+    "points": 0,
     "bio": "Nuori ja lupaava tulokas"
   },
   {
@@ -199,8 +187,8 @@
     "nationality": "Thai",
     "wins": 0,
     "podiums": 2,
-    "races": 100,
-    "points": 300,
+    "races": 108,
+    "points": 256,
     "bio": "Lahjakas kuljettaja"
   },
   {
@@ -211,8 +199,8 @@
     "nationality": "Italian",
     "wins": 0,
     "podiums": 0,
-    "races": 5,
-    "points": 10,
+    "races": 2,
+    "points": 22,
     "bio": "Nuori ja lupaava tulokas"
   },
   {
@@ -223,8 +211,8 @@
     "nationality": "French",
     "wins": 0,
     "podiums": 0,
-    "races": 5,
-    "points": 10,
+    "races": 2,
+    "points": 0,
     "bio": "Nuori ja lupaava kuljettaja"
   },
   {
@@ -235,8 +223,8 @@
     "nationality": "New Zealand",
     "wins": 0,
     "podiums": 0,
-    "races": 10,
-    "points": 20,
+    "races": 13,
+    "points": 6,
     "bio": "Nuori ja lupaava kuljettaja"
   }
 ]
