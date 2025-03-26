@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #ffffff; /* Valkoinen tausta */
   color: #000000; /* Musta teksti */
+  padding-bottom: 50px; /* Lisää marginaalia alaosaan */
 }
 
 .App-header {
@@ -32,7 +33,7 @@ button {
   color: #ffffff; /* Valkoinen teksti */
   border: none;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 5px; /* Pienempi marginaali yläreunaan */
   cursor: pointer;
   border-radius: 5px;
 }
@@ -87,7 +88,7 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
-  margin-bottom: 10px;
+  margin-bottom: 20px; /* Suurempi marginaali alareunaan */
 }
 
 form {
