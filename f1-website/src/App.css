@@ -77,3 +77,35 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #ddd;
 }
+
+img {
+  border-radius: 15px; /* Pyöristää kuvien reunat */
+}
+
+textarea {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-list a {
+  display: inline-block;
+  background-color: #000000; /* Musta tausta */
+  color: #ffffff; /* Valkoinen teksti */
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.link-list a:hover {
+  background-color: #ff0000; /* Punainen hover-efekti */
+}
