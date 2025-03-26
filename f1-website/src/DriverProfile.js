@@ -26,7 +26,7 @@ const DriverProfile = () => {
       <p>Voitot: {driver.wins}</p>
       <p>Palkintopaikat: {driver.podiums}</p>
       <p>Kisojen määrä: {driver.races}</p>
-      <p>Kokonaispisteet uran aikana: {driver.totalPoints}</p>
+      <p>Kokonaispisteet uran aikana: {driver.points}</p>
       <p>Bio: {driver.bio}</p>
     </div>
   );
