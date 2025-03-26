@@ -8,7 +8,7 @@ kisojen tulokset
 Sessioiden tulokset
 Mestaruustulokset
 
-Aikataulu
+# Aikataulu
 Vaihe 1: Suunnittelu
 
 Itslearning Suunnitelman kirjoitus 15 min
