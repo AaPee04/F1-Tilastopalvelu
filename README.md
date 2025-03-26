@@ -20,7 +20,7 @@ Vaihe 2: Perusrunko ja Päätoiminnalisuudet
 Eri välisivujen lisäys 30 min
 ensimmäisen Tietokannan täyttö 1-2 tuntia
 
-# Suunnitelma
+# Vaihe 1: Suunnitelma
 
 1.
 The website is meant for the people that are interested in F1 and want to know more about the F1 seasons and the current F1 Drivers, Races and Championship. I hope a lot of F1 fans are going to use this website to find info on their favorite F1 drivers.
@@ -37,3 +37,5 @@ During the implementation of the Website I will be using React and SQL. React fo
 5.
 I am doing project alone so I am in sole-control of project Github Repository. I will be doing the website myself so not sure how much and large website I can do but I hope to have all of the directories filled that I currently have in the working Prototype.
 I am doing the testing myself after almost every change I do. I usually test my website almost everytime I make a slight modification to the file for example adding a picture but I will be using in the website I will check that it works before I might commit it to Git Repository
+
+# Vaihe 2: Perusrunko ja Päätoiminnallisuudet
