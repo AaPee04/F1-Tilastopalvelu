@@ -15,9 +15,9 @@ const Home = () => {
       <h2>Etusivu</h2>
       <p>Tervetuloa F1-tietosivulle! Täältä löydät tietoa F1-kuljettajista, kisoista ja mestaruuksista.</p>
       <div>
-        <img src="/F1logo.jpg" alt="F1 Logo" style={{ width: '400px', height: 'auto' }} />
+        <img src="/F1logo.jpg" alt="F1 Logo" style={{ width: '600px', height: 'auto' }} />
         <h3>Kisa kalenteri</h3>
-        <img src="/F1RaceCalendar.jpg" alt="F1 Race Calendar" style={{ width: '400px', height: 'auto' }} />
+        <img src="/F1RaceCalendar.jpg" alt="F1 Race Calendar" style={{ width: '600px', height: 'auto' }} />
       </div>
       <div>
         <h3>Linkit</h3>
