@@ -36,3 +36,7 @@ Verkkosivuston toteutuksen aikana käytän Reactia ja SQL:ää. Reactia käytet�
 Teen projektin yksin, joten minulla on yksin hallinta projektin GitHub-repositoriosta. Teen verkkosivuston itse, joten en ole varma, kuinka paljon ja kuinka suuren verkkosivuston voin tehdä, mutta toivon, että kaikki hakemistot täyttyvät, jotka minulla on tällä hetkellä toimivassa prototyypissä. Testaan verkkosivustoa itse lähes jokaisen muutoksen jälkeen. Testaan yleensä verkkosivustoa lähes joka kerta, kun teen pienen muutoksen tiedostoon, esimerkiksi lisään kuvan, mutta tarkistan, että se toimii ennen kuin saatan sitoutua GitHub-repositorioon.
 
 # Vaihe 2: Perusrunko ja Päätoiminnallisuudet
+## Ympäristö
+
+
+## Frontend
