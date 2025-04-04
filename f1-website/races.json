@@ -1,0 +1,18 @@
+[
+    {
+      "race": "Australian Grand Prix",
+      "location": "Melbourne",
+      "winner": "Lando Norris",
+      "place2": "Max Verstappen",
+      "place3": "George Russell",
+      "fastestLap": "Lando Norris"
+    },
+    {
+      "race": "Chinese Grand Prix",
+      "location": "Shanghai",
+      "winner": "Oscar Piastri",
+      "place2": "Lando Norris",
+      "place3": "George Russell",
+      "fastestLap": "Oscar Piastri"
+    }
+  ]
