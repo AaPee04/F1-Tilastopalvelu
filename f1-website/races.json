@@ -14,5 +14,13 @@
       "place2": "Lando Norris",
       "place3": "George Russell",
       "fastestLap": "Oscar Piastri"
+    },
+    {
+      "race": "Japanese Grand Prix",
+      "location": "Suzuka",
+      "winner": "Max Verstappen",
+      "place2": "Lando Norris",
+      "place3": "Oscar Piastri",
+      "fastestLap": "Kimi Antonelli"
     }
   ]

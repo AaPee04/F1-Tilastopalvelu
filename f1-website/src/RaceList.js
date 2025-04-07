@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const RaceList = () => {
   const [races, setRaces] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/races')
+    fetch('http://localhost:3001/races') // Corrected endpoint
       .then(response => response.json())
       .then(data => setRaces(data))
       .catch(error => console.error('Error fetching data:', error));
@@ -30,7 +29,7 @@ const RaceList = () => {
             <tr key={index}>
               <td>{race.race}</td>
               <td>{race.location}</td>
-              <td><Link to={`/driver/${race.winner.toLowerCase().replace(' ', '-')}`}>{race.winner}</Link></td>
+              <td>{race.winner}</td>
               <td>{race.place2}</td>
               <td>{race.place3}</td>
               <td>{race.fastestLap}</td>

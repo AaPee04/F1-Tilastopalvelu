@@ -1,13 +1,28 @@
 import React, { useState } from 'react';
-import './App.css'; // Varmista, että CSS-tiedosto on tuotu
+import './App.css';
 
 const Home = () => {
   const [feedback, setFeedback] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    try {
+      const response = await fetch('http://localhost:3001/submit-feedback', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ palaute: feedback }),
+      });
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Failed to submit feedback');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
