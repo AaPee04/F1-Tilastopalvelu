@@ -1,38 +1,37 @@
 # Vaihe 2 Perusrakenne ja Päätoiminnallisuudet
 
 ## Ympäristö
-Projektia olen kehittänyt käyttämällä Visual Studio Codea. Tällä hetkellä Projekti on paikallisella tietokoneella ja Github repositoriossa. Aion siirtää projektini paikalliseen Virtuaali koneeseen, On Premise Debianiin, jossa sitten pitäisin nettisivun, kun esittelen tämän projektin videolla.
+Projektia olen kehittänyt käyttämällä Visual Studio Codea. Tällä hetkellä projekti on paikallisella tietokoneella ja GitHub-repositoriossa.
+![alt text](image-5.png)
+Nettisivu on paikallisella virtuaalikoneella, mutta siinä on joitakin ongelmia, koska en saa kopiota joistakin tiedostoista node_modules-kansiossa.
+
 ## Backend
+Backendissä käytän SQLite-tietokantaa, johon olen luonut taulut kuljettajille, kisoille, mestaruuksille ja palautteelle. Käytän Express.js:ää palvelimen luomiseen, joka tarjoaa REST API -rajapinnan tietojen hakemiseen ja palautteen lähettämiseen.
 
 ## Frontend
-Frontendsissä nettisivu on rakennettu Reactia käyttäen, joten käytin jo sivun tekiessä komennon, jolla luodaan React-appi npx create-react-app f1-website. Ja sen jälkeen aloin rakentaa nettisivua Reactin ympärille. Seuraavassa kuvassa vielä näkyy, että tässä lukee Reactapp. 
+Frontendissä nettisivu on rakennettu käyttäen Reactia. Käytin komennon npx create-react-app luodakseni React-applikaation, jonka ympärille aloin rakentaa nettisivua. Navigaatio on toteutettu React Routerilla, ja sivut sisältävät komponentteja, kuten kuljettajalista, kisalista ja mestaruuslista.
 ![alt text](image-2.png)
 
 ## Tietokanta
-Tässä vaiheessa käytän tietokantaa SQLite pohjautunutta tietokantaa f1.db, johon laitan tiedot kuten Drivers tietokanta, jossa on kaikkien tämän hetkisten F1-kuskien saavutukset kuten voittojen määrä, palkintopaikkojen määrä ja niin edespäin. Alla on kuva tietokannan sisällöstä.
+Tietokantana käytän SQLite-pohjaista f1.db-tietokantaa, johon tallennan tiedot, kuten kuljettajien saavutukset ja kisatulokset. 
 ![alt text](image.png)
-Kyseinen SQLite tietokanta näyttää seuraavalta kuvalta nettisivulla.
 ![alt text](image-1.png)
-Tietokannan täyttöön tein tiedoston addDrivers.js ja drivers.json jotta pystyisin yhdellä komennolla täyttää koko tietokannan täyteen kerralla.
+Tietokannan täyttöön käytän JavaScript-tiedostoja, jotka lisäävät tiedot tietokantaan JSON-tiedostosta.
 ![alt text](image-3.png)
-Kyseinen tiedosto suorittaa komennon, joka lisää tiedot f1.db tietokantaan, jokaiselle tiedolle mikä on tiedostossa drivers.json
+Yllä oleva kuva on yksi tiedostoista, joka lisää tietoja f1.db tietokantaan
+
 ## Perusrakenne ja arkkitehtuuri
-Rakenteena minulla on nettisivu rakennettu Reactin päälle. Etusivua varten minulla on kansiossa src tiedosto Home.js, jossa määritellään mitä nettisivun etusivulla on. ![alt text](image-4.png)
-Jokaista välilehteä varten nettisivulla minulla on omatiedostonsa DriverChart.js, RaceList.js ja ChampionShipList.js.
-App.js määrittelee polut kaikille muille komponenteille nettisivullani. App.css tiedostossa määrittelen nettisivuni tyylin ja päävärit punainen, valkoinen ja musta nettisivullani.
+Nettisivu on rakennettu Reactin päälle. Etusivua varten minulla on tiedosto Home.js, joka määrittelee etusivun sisällön. Jokaista välilehteä varten on omat tiedostonsa, kuten DriverChart.js, RaceList.js ja ChampionShipList.js. App.js määrittelee polut kaikille komponenteille, ja App.css-tiedostossa määrittelen sivun tyylin ja värit. 
+![alt text](image-4.png)
+
 ## Toiminnallisuudet
-Nettisivun päätoiminnaliisuksiin tällä hetkellä kuuluu palautelaatikko, johon voi kirjoittaa palautetta ja muutama linkki joista voi mennä muille nettisivuille kuten F1 Wikipedia ja F1 virallinen nettisivu. Toiminnallisuuteen myös käyttäessä kuskit SQLite taulukossa painaessa kuskien nimiä välilehdellä Kuskit, Nettisivu aukaisee kuskin tiedot erillisille sivulle ja taulukolla joka on sivulla kuskit näkyy vain osa kuskien tiedoista. 
+Nettisivun päätoiminnallisuuksiin kuuluu palautelaatikko, johon voi kirjoittaa palautetta, sekä linkit muille nettisivuille, kuten F1 Wikipedia ja F1 virallinen nettisivu. Käyttäjä voi myös tarkastella kuljettajien tietoja painamalla heidän nimiään välilehdellä Kuskit, jolloin nettisivu aukaisee kuljettajan tiedot erilliselle sivulle.
 
 ## Koodin laatu ja Dokumentointi
-Olen käyttänyt CoPilottia apuna tässä Projektissa tähän asti, koska itse en osaisi aivan täysin tehdä näitä täysin ilman mitään apua. Koodi on jaettu moniin tiedostoihin, joista jokainen määrittelee oman välisivunsa. Minulla tiedostot Home.js, RaceList.js ja muut, että koodi pysyy siistinä.
-Olen myös tehnyt itselleni tiedostoja, joita Noden avulla ajamalla voin käyttää f1.db tietokantaani, että minun erikseen ei tarvitse mennä tekemään kaikki komennot erikseen SQLite komento rivillä.
-Dokumentointiin minulla on kansio Projektin vaiheet ja tiedosto README.md
-## Testaaminen ja Virheiden hallinta
-Sivulla on palauteosio, jossa käyttäjä voi lähettää palautetta lomakkeen kautta. Lomake on toteutettu Reactilla, ja siinä käytetään useState-hookia tiedon hallintaan. Kun käyttäjä lähettää palautteen, data lähetetään backendille fetch-pyynnöllä. Pyyntö on suojattu try-catch-rakenteella, jolla mahdolliset virheet kaappautuvat ja tulostuvat konsoliin. Jos palautteen lähetys onnistuu, käyttäjälle näytetään kiitosviesti.
+Olen käyttänyt Copilotia apuna tässä projektissa. Koodi on jaettu moniin tiedostoihin, joista jokainen määrittelee oman välisivunsa. Dokumentointiin minulla on kansio Projektin vaiheet ja tiedosto README.md.
 
-Käytän myös required-attribuuttia varmistaakseni, ettei lomake lähde tyhjänä. Tämä on osa käyttöliittymän testausta ja virheiden hallintaa.
+## Testaaminen ja Virheiden hallinta
+Sivulla on palauteosio, jossa käyttäjä voi lähettää palautetta lomakkeen kautta. Lomake on toteutettu Reactilla, ja siinä käytetään useState-hookia tiedon hallintaan. Pyyntö on suojattu try-catch-rakenteella, jolla mahdolliset virheet kaapataan ja tulostetaan konsoliin. Käytän myös required-attribuuttia varmistaakseni, ettei lomake lähde tyhjänä.
+
 ## UI ja UX
-Käyttöliittymän UI:ta määrittelen app.css tiedostolla. Sivustolla käytän Selviä värejä Valkoista, Punaista ja Mustaa jotka ovat Formula 1 sarjan keskusvärit. Navigointi osiossa käytän punaisella pohjalla olevia valkoisia nappeja, ja kun hiiri on napin päällä kyseiseen kohtaan tulee alaviiva, että siinä näkyy selvästi minkä olet valitsemassa.
-Käytän myös Hover-effektejä joiden avulla napit, joilla on eri toimintoja. Nämä napit muuttuvat punaiseksi mustasta, kun niitten päällä on hiiri ja tämä toimii visuaalisena palautteena nettisivun käyttäjälle.
-Käyttöliittymän olen rakentanut selkeästi: navigointi on ylhäällä, sisältö keskitettynä, ja tiedot esitetään esimerkiksi taulukoissa, jotka ovat helposti silmäiltävissä. 
-Tästä kaikesta on apua hyvässä käyttäjäkokemusta, sillä käyttäjä löytää tarvitsemansa tiedot vaivattomasti ja nopeasti.
+Käyttöliittymän UI:ta määrittelen app.css-tiedostolla. Sivustolla käytän selviä värejä: valkoista, punaista ja mustaa, jotka ovat Formula 1 -sarjan keskusvärit. Navigaatio-osiossa käytän punaisella pohjalla olevia valkoisia nappeja, ja kun hiiri on napin päällä, kyseiseen kohtaan tulee alaviiva, jotta näkyy selvästi, mitä olet valitsemassa. Käytän myös hover-efektejä, joiden avulla napit muuttuvat punaiseksi mustasta, kun niiden päällä on hiiri.
