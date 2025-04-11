@@ -8,3 +8,4 @@ Vaihe 1: Suunnittelu
 Vaihe 2: Perusrunko ja Päätoiminnalisuudet
 - Eri välisivujen lisäys 30 min
 - ensimmäisen Tietokannan täyttö 1-2 tuntia
+- Koko vaihe Tietokantojen täyttö ja muiden sivujen teko yhteensä noin 8-10 tuntia.
