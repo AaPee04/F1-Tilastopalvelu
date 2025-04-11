@@ -8,6 +8,7 @@ const Home = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Lähettää palautteen palvelimelle
       const response = await fetch('http://localhost:3001/submit-feedback', {
         method: 'POST',
         headers: {
@@ -18,10 +19,10 @@ const Home = () => {
       if (response.ok) {
         setSubmitted(true);
       } else {
-        console.error('Failed to submit feedback');
+        console.error('Palautteen lähettäminen epäonnistui');
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Virhe:', error);
     }
   };
 
@@ -45,7 +46,7 @@ const Home = () => {
         <h3>Palaute</h3>
         {submitted ? (
           <p>Kiitos palautteestasi!</p>
-        ) : (
+        ) : ( // Palaute Ikkuna
           <form onSubmit={handleSubmit}>
             <textarea
               value={feedback}

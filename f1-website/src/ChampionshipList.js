@@ -4,10 +4,11 @@ const ChampionshipList = () => {
   const [championships, setChampionships] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/championships') // Corrected endpoint
+    // Hakee mestaruustiedot palvelimelta
+    fetch('http://localhost:3001/championships')
       .then(response => response.json())
       .then(data => setChampionships(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Virhe haettaessa tietoja:', error));
   }, []);
 
   return (
@@ -24,6 +25,7 @@ const ChampionshipList = () => {
           </tr>
         </thead>
         <tbody>
+          {/* Renderöi mestaruustiedot */}
           {championships.map((championship, index) => (
             <tr key={index}>
               <td>{championship.position}</td>

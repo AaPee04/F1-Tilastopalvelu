@@ -7,6 +7,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Hakee kaikki kuljettajat tietokannasta
 app.get('/drivers', (req, res) => {
   const query = 'SELECT * FROM drivers';
   db.all(query, [], (err, rows) => {
@@ -18,6 +19,7 @@ app.get('/drivers', (req, res) => {
   });
 });
 
+// Hakee tietyn kuljettajan tiedot nimen perusteella
 app.get('/driver/:name', (req, res) => {
   const name = req.params.name;
   const query = 'SELECT * FROM drivers WHERE name = ?';
@@ -30,6 +32,7 @@ app.get('/driver/:name', (req, res) => {
   });
 });
 
+// Hakee kaikki kisat tietokannasta
 app.get('/races', (req, res) => {
   const query = 'SELECT * FROM races';
   db.all(query, [], (err, rows) => {
@@ -41,6 +44,7 @@ app.get('/races', (req, res) => {
   });
 });
 
+// Hakee kaikki mestaruudet tietokannasta
 app.get('/championships', (req, res) => {
   const query = 'SELECT * FROM championship';
   db.all(query, [], (err, rows) => {
@@ -52,6 +56,7 @@ app.get('/championships', (req, res) => {
   });
 });
 
+// Käsittelee palautteen lähettämisen
 app.post('/submit-feedback', (req, res) => {
   const { palaute } = req.body;
   const query = 'INSERT INTO palaute (palaute) VALUES (?)';
@@ -60,10 +65,11 @@ app.post('/submit-feedback', (req, res) => {
       res.status(500).json({ error: err.message });
       return;
     }
-    res.status(200).json({ message: 'Feedback submitted successfully!' });
+    res.status(200).json({ message: 'Palaute lähetetty onnistuneesti!' });
   });
 });
 
+// Käynnistää palvelimen portissa 3001
 app.listen(3001, () => {
-  console.log('Server running on port 3001');
+  console.log('Palvelin käynnissä portissa 3001');
 });

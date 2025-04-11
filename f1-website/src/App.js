@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <nav>
+            {/* Navigointilinkit */}
             <Link to="/">Etusivu</Link>
             <Link to="/drivers">Kuljettajat</Link>
             <Link to="/races">Kisat</Link>
@@ -22,6 +23,7 @@ function App() {
           <p>Tervetuloa F1-tietosivulle!</p>
         </header>
         <Routes>
+          {/* Reittimääritykset */}
           <Route path="/" element={<Home />} />
           <Route path="/drivers" element={<DriverList />} />
           <Route path="/driver/:name" element={<DriverProfile />} />

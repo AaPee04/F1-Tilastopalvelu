@@ -6,10 +6,11 @@ const DriverProfile = () => {
   const [driver, setDriver] = useState(null);
 
   useEffect(() => {
+    // Hakee kuljettajaprofiilin tiedot palvelimelta
     fetch(`http://localhost:3001/driver/${name}`)
       .then(response => response.json())
       .then(data => setDriver(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Virhe haettaessa tietoja:', error));
   }, [name]);
 
   if (!driver) {

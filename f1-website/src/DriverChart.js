@@ -5,10 +5,11 @@ const DriverList = () => {
   const [drivers, setDrivers] = useState([]);
 
   useEffect(() => {
+    // Hakee kuljettajatiedot palvelimelta
     fetch('http://localhost:3001/drivers')
       .then(response => response.json())
       .then(data => setDrivers(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Virhe haettaessa tietoja:', error));
   }, []);
 
   return (
@@ -23,6 +24,7 @@ const DriverList = () => {
           </tr>
         </thead>
         <tbody>
+          {/* Renderöi kuljettajatiedot */}
           {drivers.map((driver, index) => (
             <tr key={index}>
               <td><Link to={`/driver/${driver.name.toLowerCase().replace(' ', '-')}`}>{driver.name}</Link></td>

@@ -4,10 +4,11 @@ const RaceList = () => {
   const [races, setRaces] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/races') // Corrected endpoint
+    // Hakee kisatiedot palvelimelta
+    fetch('http://localhost:3001/races')
       .then(response => response.json())
       .then(data => setRaces(data))
-      .catch(error => console.error('Error fetching data:', error));
+      .catch(error => console.error('Virhe haettaessa tietoja:', error));
   }, []);
 
   return (
@@ -25,6 +26,7 @@ const RaceList = () => {
           </tr>
         </thead>
         <tbody>
+          {/* Renderöi kisatiedot */}
           {races.map((race, index) => (
             <tr key={index}>
               <td>{race.race}</td>
