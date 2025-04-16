@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import './DriverList.css'; // Import the CSS file for styling
 
 const DriverList = () => {
   const [drivers, setDrivers] = useState([]);
@@ -12,28 +12,29 @@ const DriverList = () => {
       .catch(error => console.error('Virhe haettaessa tietoja:', error));
   }, []);
 
+  if (drivers.length === 0) {
+    return <div>Kuljettajia ei löytynyt.</div>;
+  }
+
   return (
-    <div>
+    <div className="driver-list">
       <h2>Nykyiset F1-kuljettajat</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nimi</th>
-            <th>Tiimi</th>
-            <th>Kansallisuus</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* Renderöi kuljettajatiedot */}
-          {drivers.map((driver, index) => (
-            <tr key={index}>
-              <td><Link to={`/driver/${driver.name.toLowerCase().replace(' ', '-')}`}>{driver.name}</Link></td>
-              <td>{driver.team}</td>
-              <td>{driver.nationality}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="driver-cards">
+        {drivers.map((driver, index) => (
+          <div key={index} className="driver-card">
+            <h3>{driver.name}</h3>
+            <p>Ikä: {driver.age}</p>
+            <p>Paalupaikat: {driver.polePositions}</p>
+            <p>Tiimi: {driver.team}</p>
+            <p>Kansallisuus: {driver.nationality}</p>
+            <p>Voitot: {driver.wins}</p>
+            <p>Palkintopaikat: {driver.podiums}</p>
+            <p>Kisojen määrä: {driver.races}</p>
+            <p>Kokonaispisteet uran aikana: {driver.points}</p>
+            <p>Bio: {driver.bio}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

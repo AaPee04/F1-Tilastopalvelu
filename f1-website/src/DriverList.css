@@ -1,0 +1,33 @@
+.driver-list {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .driver-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .driver-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .driver-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .driver-card h3 {
+    color: #ff0000;
+  }
+  
+  .driver-card p {
+    margin: 5px 0;
+  }
+  
