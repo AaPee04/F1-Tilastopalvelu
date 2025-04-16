@@ -8,8 +8,6 @@ import ChampionshipList from './ChampionshipList';
 import ConstructorList from './ConstructorList';
 
 function App() {
-  const location = useLocation();
-
   return (
     <Router>
       <div className="App">
@@ -29,12 +27,7 @@ function App() {
           </nav>
           <h1>F1 Tietoa</h1>
           <p>Tervetuloa F1-tietosivulle!</p>
-          {(location.pathname === '/championships' || location.pathname === '/constructors') && (
-            <div className="navigation-buttons">
-              <Link to="/championships" className="nav-link">Kuskit</Link>
-              <Link to="/constructors" className="nav-link">Tallit</Link>
-            </div>
-          )}
+          <LocationBasedNavigation />
         </header>
         <Routes>
           {/* Reittimääritykset */}
@@ -46,6 +39,19 @@ function App() {
         </Routes>
       </div>
     </Router>
+  );
+}
+
+function LocationBasedNavigation() {
+  const location = useLocation();
+
+  return (
+    (location.pathname === '/championships' || location.pathname === '/constructors') && (
+      <div className="navigation-buttons">
+        <Link to="/championships" className="nav-link">Kuskit</Link>
+        <Link to="/constructors" className="nav-link">Tallit</Link>
+      </div>
+    )
   );
 }
 

@@ -1,62 +1,62 @@
 [
-        {
-            "position": "1",
-            "teamName": "McLaren Mercedes",
-            "seasonPoints": 151,
-            "seasonWins": 3
-        },
-        {
-            "position": "2",
-            "teamName": "Mercedes",
-            "seasonPoints": 93,
-            "seasonWins": 0
-        },
-        {
-            "position": "3",
-            "teamName": "Red Bull Racing Honda RBPT",
-            "seasonPoints": 71,
-            "seasonWins": 1
-        },
-        {
-            "position": "4",
-            "teamName": "Ferrari",
-            "seasonPoints": 57,
-            "seasonWins": 0
-        },
-        {
-            "position": "5",
-            "teamName": "Haas Ferrari",
-            "seasonPoints": 20,
-            "seasonWins": 0
-        },
-        {
-            "position": "6",
-            "teamName": "Williams Mercedes",
-            "seasonPoints": 19,
-            "seasonWins": 0
-        },
-        {
-            "position": "7",
-            "teamName": "Aston Martin Aramco Mercedes",
-            "seasonPoints": 10,
-            "seasonWins": 0
-        },
-        {
-            "position": "8",
-            "teamName": "Racing Bulls Honda RBPT",
-            "seasonPoints": 7,
-            "seasonWins": 0
-        },
-        {
-            "position": "9",
-            "teamName": "Alpine Renault",
-            "seasonPoints": 6,
-            "seasonWins": 0
-        },
-        {
-            "position": "10",
-            "teamName": "Kick Sauber Ferrari",
-            "seasonPoints": 6,
-            "seasonWins": 0
-        }
-]
+    {
+        "position": "1",
+        "teamName": "McLaren Mercedes",
+        "seasonPoints": 151,
+        "seasonWins": 3
+    },
+    {
+        "position": "2",
+        "teamName": "Mercedes",
+        "seasonPoints": 93,
+        "seasonWins": 0
+    },
+    {
+        "position": "3",
+        "teamName": "Red Bull Racing Honda RBPT",
+        "seasonPoints": 71,
+        "seasonWins": 1
+    },
+    {
+        "position": "4",
+        "teamName": "Ferrari",
+        "seasonPoints": 57,
+        "seasonWins": 0
+    },
+    {
+        "position": "5",
+        "teamName": "Haas Ferrari",
+        "seasonPoints": 20,
+        "seasonWins": 0
+    },
+    {
+        "position": "6",
+        "teamName": "Williams Mercedes",
+        "seasonPoints": 19,
+        "seasonWins": 0
+    },
+    {
+        "position": "7",
+        "teamName": "Aston Martin Aramco Mercedes",
+        "seasonPoints": 10,
+        "seasonWins": 0
+    },
+    {
+        "position": "8",
+        "teamName": "Racing Bulls Honda RBPT",
+        "seasonPoints": 7,
+        "seasonWins": 0
+    },
+    {
+        "position": "9",
+        "teamName": "Alpine Renault",
+        "seasonPoints": 6,
+        "seasonWins": 0
+    },
+    {
+        "position": "10",
+        "teamName": "Kick Sauber Ferrari",
+        "seasonPoints": 6,
+        "seasonWins": 0
+    }
+ ]
