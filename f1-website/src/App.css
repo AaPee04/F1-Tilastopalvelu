@@ -8,7 +8,6 @@
 .App-header {
   background-color: #ff0000; /* Punainen tausta */
   padding: 20px;
-  border-radius: 10px;
 }
 
 nav {
@@ -40,6 +39,7 @@ nav a:hover, .dropdown button:hover, .nav-link:hover {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 10px; /* Pyöristää dropdown-menun kulmat */
 }
 
 .dropdown-content a {
@@ -88,6 +88,8 @@ table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
+  border-radius: 10px; /* Pyöristää taulukon kulmat */
+  overflow: hidden; /* Estää kulmien ulkopuolisen sisällön näkymisen */
 }
 
 th, td {
