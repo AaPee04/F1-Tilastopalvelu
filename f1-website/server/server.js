@@ -56,6 +56,20 @@ app.get('/championships', (req, res) => {
   });
 });
 
+
+// Hakee kaikki tallit tietokannasta
+app.get('/constructors', (req, res) => {
+    const query = 'SELECT * FROM constructors';
+    db.all(query, [], (err, rows) => {
+      if (err) {
+        res.status(500).json({ error: err.message });
+        return;
+      }
+      res.json(rows);
+    });
+  });
+  
+
 // Käsittelee palautteen lähettämisen
 app.post('/submit-feedback', (req, res) => {
   const { palaute } = req.body;

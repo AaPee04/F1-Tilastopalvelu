@@ -3,63 +3,63 @@
         "position": "1",
         "driverName": "Lando Norris",
         "team": "McLaren Mercedes",
-        "seasonPoints": "62",
+        "seasonPoints": "77",
         "seasonWins": "1"
     },
     {
         "position": "2",
-        "driverName": "Max Verstappen",
-        "team": "Red Bull Racing Honda RBPT",
-        "seasonPoints": "61",
-        "seasonWins": "1"
+        "driverName": "Oscar Piastri",
+        "team": "McLaren Mercedes",
+        "seasonPoints": "74",
+        "seasonWins": "2"
     },
     {
         "position": "3",
-        "driverName": "Oscar Piastri",
-        "team": "McLaren Mercedes",
-        "seasonPoints": "49",
+        "driverName": "Max Verstappen",
+        "team": "Red Bull Racing Honda RBPT",
+        "seasonPoints": "69",
         "seasonWins": "1"
     },
     {
         "position": "4",
         "driverName": "George Russell",
         "team": "Mercedes",
-        "seasonPoints": "45",
+        "seasonPoints": "63",
         "seasonWins": "0"
     },
     {
         "position": "5",
+        "driverName": "Charles Leclerc",
+        "team": "Ferrari",
+        "seasonPoints": "32",
+        "seasonWins": "0"
+    },
+    {
+        "position": "6",
         "driverName": "Andrea Kimi Antonelli",
         "team": "Mercedes",
         "seasonPoints": "30",
         "seasonWins": "0"
     },
     {
-        "position": "6",
-        "driverName": "Charles Leclerc",
+        "position": "7",
+        "driverName": "Lewis Hamilton",
         "team": "Ferrari",
-        "seasonPoints": "20",
+        "seasonPoints": "25",
         "seasonWins": "0"
     },
     {
-        "position": "7",
+        "position": "8",
         "driverName": "Alexander Albon",
         "team": "Williams Mercedes",
         "seasonPoints": "18",
         "seasonWins": "0"
     },
     {
-        "position": "8",
-        "driverName": "Lewis Hamilton",
-        "team": "Ferrari",
-        "seasonPoints": "15",
-        "seasonWins": "0"
-    },
-    {
         "position": "9",
         "driverName": "Esteban Ocon",
         "team": "Haas Ferrari",
-        "seasonPoints": "10",
+        "seasonPoints": "14",
         "seasonWins": "0"
     },
     {
@@ -71,44 +71,44 @@
     },
     {
         "position": "11",
+        "driverName": "Pierre Gasly",
+        "team": "Alpine Renault",
+        "seasonPoints": "6",
+        "seasonWins": "0"
+    },
+    {
+        "position": "12",
         "driverName": "Nico Hulkenberg",
         "team": "Kick Sauber Ferrari",
         "seasonPoints": "6",
         "seasonWins": "0"
     },
     {
-        "position": "12",
+        "position": "13",
         "driverName": "Oliver Bearman",
         "team": "Haas Ferrari",
+        "seasonPoints": "6",
+        "seasonWins": "0"
+    },
+    {
+        "position": "14",
+        "driverName": "Yuki Tsunoda",
+        "team": "Red Bull Racing Honda RBPT",
         "seasonPoints": "5",
         "seasonWins": "0"
     },
     {
-        "position": "13",
+        "position": "15",
         "driverName": "Isack Hadjar",
         "team": "Racing Bulls Honda RBPT",
         "seasonPoints": "4",
         "seasonWins": "0"
     },
     {
-        "position": "14",
-        "driverName": "Yuki Tsunoda",
-        "team": "Racing Bulls Honda RBPT",
-        "seasonPoints": "3",
-        "seasonWins": "0"
-    },
-    {
-        "position": "15",
+        "position": "16",
         "driverName": "Carlos Sainz Jr.",
         "team": "Williams Mercedes",
         "seasonPoints": "1",
-        "seasonWins": "0"
-    },
-    {
-        "position": "16",
-        "driverName": "Pierre Gasly",
-        "team": "Alpine Renault",
-        "seasonPoints": "0",
         "seasonWins": "0"
     },
     {
