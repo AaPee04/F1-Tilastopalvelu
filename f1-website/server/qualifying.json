@@ -1,0 +1,34 @@
+[
+    {
+        "race": "Australian Grand Prix",
+        "location": "Melbourne",
+        "qualifyingWinner": "Lando Norris",
+        "qualifyingPlace2": "Oscar Piastri",
+        "qualifyingPlace3": "Max Verstappen",
+        "fastestLapTime": "1:15.096"
+    },
+    {
+        "race": "Chinese Grand Prix",
+        "location": "Shanghai",
+        "qualifyingWinner": "Oscar Piastri",
+        "qualifyingPlace2": "George Russell",
+        "qualifyingPlace3": "Lando Norris",
+        "fastestLapTime": "1:30.641"
+    },
+    {
+        "race": "Japanese Grand Prix",
+        "location": "Suzuka",
+        "qualifyingWinner": "Max Verstappen",
+        "qualifyingPlace2": "Lando Norris",
+        "qualifyingPlace3": "Oscar Piastri",
+        "fastestLapTime": "1:26.983"
+    },
+    {
+        "race": "Bahrain Grand Prix",
+        "location": "Sakhir",
+        "qualifyingWinner": "Oscar Piastri",
+        "qualifyingPlace2": "George Russell",
+        "qualifyingPlace3": "Charles Leclerc",
+        "fastestLapTime": "1:29.841"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "race": "Australian Grand Prix",
+        "location": "Melbourne",
+        "fastest1": "Charles Leclerc",
+        "fastest2": "Oscar Piastri",
+        "fastest3": "Lando Norris",
+        "fastestLapTime": "1:16.439"
+    },
+    {
+        "race": "Japanese Grand Prix",
+        "location": "Suzuka",
+        "fastest1": "Oscar Piastri",
+        "fastest2": "Lando Norris",
+        "fastest3": "Isack Hadjar",
+        "fastestLapTime": "1:28.114"
+    },
+    {
+        "race": "Bahrain Grand Prix",
+        "location": "Sakhir",
+        "fastest1": "Oscar Piastri",
+        "fastest2": "Lando Norris",
+        "fastest3": "George Russell",
+        "fastestLapTime": "1:30.505"
+    }
+]

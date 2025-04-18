@@ -1,26 +1,34 @@
 [
-    {
+  {
       "race": "Australian Grand Prix",
       "location": "Melbourne",
       "winner": "Lando Norris",
       "place2": "Max Verstappen",
       "place3": "George Russell",
       "fastestLap": "Lando Norris"
-    },
-    {
+  },
+  {
       "race": "Chinese Grand Prix",
       "location": "Shanghai",
       "winner": "Oscar Piastri",
       "place2": "Lando Norris",
       "place3": "George Russell",
       "fastestLap": "Oscar Piastri"
-    },
-    {
+  },
+  {
       "race": "Japanese Grand Prix",
       "location": "Suzuka",
       "winner": "Max Verstappen",
       "place2": "Lando Norris",
       "place3": "Oscar Piastri",
       "fastestLap": "Kimi Antonelli"
-    }
-  ]
+  },
+  {
+      "race": "Bahrain Grand Prix",
+      "location": "Sakhir",
+      "winner": "Oscar Piastri",
+      "place2": "George Russell",
+      "place3": "Lando Norris",
+      "fastestLap": "Oscar Piastri"
+  }
+]

@@ -8,6 +8,10 @@ db.serialize(() => {
   db.run("CREATE TABLE IF NOT EXISTS championship (position INTEGER, driverName TEXT, team TEXT, seasonPoints INTEGER, seasonWins INTEGER)");
   db.run("CREATE TABLE IF NOT EXISTS constructors (position INTEGER, teamName TEXT, seasonPoints INTEGER, seasonWins INTEGER)");
   db.run("CREATE TABLE IF NOT EXISTS palaute (palaute TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS practice1 (race TEXT, location TEXT, fastest1 TEXT, fastest2 TEXT, fastest3 TEXT, fastestLapTime TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS practice2 (race TEXT, location TEXT, fastest1 TEXT, fastest2 TEXT, fastest3 TEXT, fastestLapTime TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS practice3 (race TEXT, location TEXT, fastest1 TEXT, fastest2 TEXT, fastest3 TEXT, fastestLapTime TEXT)");
+  db.run("CREATE TABLE IF NOT EXISTS qualifying (race TEXT, location TEXT, qualifyingWinner TEXT, qualifyingPlace2 TEXT, qualifyingPlace3 TEXT, fastestLapTime TEXT)");
 });
 
 module.exports = db;

@@ -56,19 +56,65 @@ app.get('/championships', (req, res) => {
   });
 });
 
-
 // Hakee kaikki tallit tietokannasta
 app.get('/constructors', (req, res) => {
-    const query = 'SELECT * FROM constructors';
-    db.all(query, [], (err, rows) => {
-      if (err) {
-        res.status(500).json({ error: err.message });
-        return;
-      }
-      res.json(rows);
-    });
+  const query = 'SELECT * FROM constructors';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
   });
-  
+});
+
+// Hakee ensimmäisen harjoitussession tulokset tietokannasta
+app.get('/practice1', (req, res) => {
+  const query = 'SELECT * FROM practice1';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
+});
+
+// Hakee toisen harjoitussession tulokset tietokannasta
+app.get('/practice2', (req, res) => {
+  const query = 'SELECT * FROM practice2';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
+});
+
+// Hakee kolmannen harjoitussession tulokset tietokannasta
+app.get('/practice3', (req, res) => {
+  const query = 'SELECT * FROM practice3';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
+});
+
+// Hakee aika-ajojen tulokset tietokannasta
+app.get('/qualifying', (req, res) => {
+  const query = 'SELECT * FROM qualifying';
+  db.all(query, [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
+});
 
 // Käsittelee palautteen lähettämisen
 app.post('/submit-feedback', (req, res) => {
