@@ -22,16 +22,22 @@ const DriverList = () => {
       <div className="driver-cards">
         {drivers.map((driver, index) => (
           <div key={index} className="driver-card">
-            <h3>{driver.name}</h3>
-            <p>Ikä: {driver.age}</p>
-            <p>Paalupaikat: {driver.polePositions}</p>
-            <p>Tiimi: {driver.team}</p>
-            <p>Kansallisuus: {driver.nationality}</p>
-            <p>Voitot: {driver.wins}</p>
-            <p>Palkintopaikat: {driver.podiums}</p>
-            <p>Kisojen määrä: {driver.races}</p>
-            <p>Kokonaispisteet uran aikana: {driver.points}</p>
-            <p>Bio: {driver.bio}</p>
+            <img src={`./images/drivers/${driver.image}`} alt={`${driver.name}`} />
+            <div>
+              <h3>
+                {driver.name}
+                <img src={`./images/flags/${driver.flagImage}`} alt={`${driver.nationality} flag`} />
+              </h3>
+              <p>Ikä: {driver.age}</p>
+              <p>Kuljettajanumero: {driver.drivernumber}</p>
+              <p>Tiimi: {driver.team}</p>
+              <p>Kansallisuus: {driver.nationality}</p>
+              <p>Mestaruudet: {driver.championships}</p>
+              <p>Voitot: {driver.wins}</p>
+              <p>Palkintopaikat: {driver.podiums}</p>
+              <p>Kisojen määrä: {driver.races}</p>
+              <p>Kokonaispisteet uran aikana: {driver.totalPoints}</p>
+            </div>
           </div>
         ))}
       </div>
