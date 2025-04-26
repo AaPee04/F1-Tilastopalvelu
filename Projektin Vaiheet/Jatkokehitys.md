@@ -1,15 +1,13 @@
 # Vaihe 3 Projektin Jatkokehitys
 
 ## Jatkokehityksen Idea
-Jatkokehityksessä halusin laajentaa, tietojen määrää mitä nettisivulta voi löytää.
-Halusin myös jatkokehityksessä parannella nettisivun tyyliä siittä, että miltä nettisivu näyttää. Halusin muutenkin parantaa miltä kuskisivu näytti ja, koska en vaiheessa 2 onnistunut saamaan erinnäistä sivua toimimaan jokaiselle kuskille halusin muuttaa sen parempaan tyyliin.
+Jatkokehityksessä halusin laajentaa tietojen määrää, mitä nettisivulta voi löytää. Tavoitteena oli tarjota käyttäjille enemmän ja monipuolisempaa tietoa F1-kisoista ja kuljettajista. Halusin myös parantaa nettisivun ulkoasua ja käytettävyyttä, jotta sivusto olisi visuaalisesti miellyttävämpi ja helpompi navigoida. Erityisesti halusin parantaa kuljettajasivun ulkoasua, sillä vaiheessa 2 en onnistunut saamaan erillistä sivua toimimaan jokaiselle kuljettajalle. Tämän vuoksi päätin muuttaa sivun ulkoasua ja rakennetta parempaan suuntaan.
 ## Jatkokehitys
-Lisäsin muutaman SQLite tietokannan, joihin lisäsin F1 Viikonloppujen Aika-Ajot ja Harjoitussessiot, Sekä yhden SQLite tietokannan, jossa on Tallien Mestaruudet tältä vuodelta. Parantelin myös näiden Taulukoiden tyyliä hieman App.css tiedostossa, että taulukot ovat hieman isompia ja niitä on helpompi lukea.
-Lisäsin myös Kisat ja Mestaruudet välilehteen Dropdown menut, että kun sivulle menee voit pitämällä hiirtä tekstin päällä mennä valitsemaan mille välilehdistä menet. Lisäsin myös paremman käytettävyyden vuoksi myös napit sivulle, että ei tarvitse mennä aina aukaisemaan dropdown menua, kun haluaa vaihtaa välilehden.
+Lisäsin muutaman uuden SQLite-tietokannan, joihin tallensin F1-viikonloppujen aika-ajot ja harjoitussessiot. Lisäksi lisäsin yhden SQLite-tietokannan, jossa on tallien mestaruudet tältä vuodelta. Näiden tietokantojen avulla käyttäjät voivat nyt tarkastella yksityiskohtaisempia tietoja kisoista ja tallien suorituksista. Parantelin myös näiden taulukoiden tyyliä hieman App.css-tiedostossa, jotta taulukot olisivat hieman isompia ja helpompia lukea.
+Lisäsin Kisat ja Mestaruudet -välilehteen dropdown-menut, joiden avulla käyttäjät voivat helposti valita haluamansa välilehden pitämällä hiirtä tekstin päällä. Tämä parantaa sivuston käytettävyyttä ja tekee navigoinnista sujuvampaa. Lisäsin myös napit sivulle, jotta käyttäjät voivat vaihtaa välilehteä ilman, että heidän tarvitsee aina avata dropdown-menua.
 
 ![alt text](image-7.png)
 
-Kuskit välilehdessä tein aikasuuren päivityksen. Kuski taulukon sijaan tein jokaiselle kuskille oman laatikkonsa Driverlist.css avulla, jossa määritellään miltä Kuskit välilehti näyttää.
-Lisäsin Jokaiselle kuskille kuvan ja lipun. Päivitin myös tiedot kuskit tietokannassa olemaan hieman paremmat, kuin mitä ne olivat Poistin entisestä tietokannasta pari tietoa ja lisäsin sinne joitain toisia tietoja kuten kuskiennumero ja lisäsin tietokantaan kuvien nimet, jotta sitten Driverchart.js
+Kuskit-välilehdessä tein merkittävän päivityksen. Aiemman kuljettajataulukon sijaan loin jokaiselle kuljettajalle oman laatikkonsa Driverlist.css-tiedoston avulla, jossa määritellään, miltä Kuskit-välilehti näyttää. Lisäsin jokaiselle kuljettajalle kuvan ja lipun, jotta sivu olisi visuaalisesti houkuttelevampi ja informatiivisempi. Päivitin myös kuljettajatietokannan tiedot olemaan tarkempia ja ajantasaisempia. Poistin vanhasta tietokannasta muutamia tietoja ja lisäsin uusia, kuten kuljettajanumeron. Lisäksi lisäsin tietokantaan kuvien nimet, jotta Driverchart.js-tiedosto voi hakea ja näyttää oikeat kuvat.
 
 ![alt text](image-6.png)
