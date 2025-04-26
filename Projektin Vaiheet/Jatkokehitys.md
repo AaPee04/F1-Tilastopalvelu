@@ -10,6 +10,6 @@ Lisäsin myös Kisat ja Mestaruudet välilehteen Dropdown menut, että kun sivul
 ![alt text](image-7.png)
 
 Kuskit välilehdessä tein aikasuuren päivityksen. Kuski taulukon sijaan tein jokaiselle kuskille oman laatikkonsa Driverlist.css avulla, jossa määritellään miltä Kuskit välilehti näyttää.
-Lisäsin Jokaiselle kuskille kuvan ja lipun. Päivitin myös tiedot kuskit tietokannassa olemaan hieman paremmat, kuin mitä ne olivat Poistin entisestä tietokannasta pari tietoa ja lisäsin sinne joitain toisia tietoja kuten kuskiennumero ja lisäsin tietokantaan kuvien nimet, jotta sitten '''Driverchart.js'''
+Lisäsin Jokaiselle kuskille kuvan ja lipun. Päivitin myös tiedot kuskit tietokannassa olemaan hieman paremmat, kuin mitä ne olivat Poistin entisestä tietokannasta pari tietoa ja lisäsin sinne joitain toisia tietoja kuten kuskiennumero ja lisäsin tietokantaan kuvien nimet, jotta sitten Driverchart.js
 
 ![alt text](image-6.png)
