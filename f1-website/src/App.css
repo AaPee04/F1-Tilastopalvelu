@@ -90,10 +90,11 @@ table {
   border-collapse: collapse;
   border-radius: 10px; /* Pyöristää taulukon kulmat */
   overflow: hidden; /* Estää kulmien ulkopuolisen sisällön näkymisen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 th, td {
-  padding: 10px;
+  padding: 15px; /* Increased padding */
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -104,11 +105,11 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f1f1f1;
+  background-color: #f9f9f9; /* Lighter background for even rows */
 }
 
 tr:hover {
-  background-color: #ddd;
+  background-color: #f1f1f1; /* Hover effect */
 }
 
 img {
